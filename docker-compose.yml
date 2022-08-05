@@ -64,6 +64,7 @@ services:
       EXERCISM_DOCKER: 'true'
       OVERMIND_SOCKET: "/usr/src/app/tmp/overmind.sock"
       GIT_CONTENT_REPO: https://github.com/FacultadDeIngenieria/exercism-prog2-track
+      RAILS_DEVELOPMENT_HOSTS: "facultaddeingenieria.duckdns.org"
     ports:
     - 3020:3020
     - 3334:3334
@@ -111,7 +112,7 @@ services:
     image: maksimstojkovic/duckdns
     container_name: duckdns
     environment:
-      - DUCKDNS_TOKEN=${DUCKDNS_TOKEN}
+      - DUCKDNS_TOKEN=${DUCKDNS_TOKEN_ENV}
       - DUCKDNS_DOMAIN=facultaddeingenieria.duckdns.org
       - DUCKDNS_DELAY=5 #optional
     restart: unless-stopped
