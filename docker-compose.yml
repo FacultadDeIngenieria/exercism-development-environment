@@ -66,8 +66,8 @@ services:
       GIT_CONTENT_REPO: https://github.com/FacultadDeIngenieria/exercism-prog2-track
 #      RAILS_DEVELOPMENT_HOSTS: "facultaddeingenieria.duckdns.org"
     ports:
-    - 80:80
-    - 443:443
+    - 80:3020
+    - 443:3020
     - 3334:3334
     volumes:
     - "../exercism-website:/usr/src/app"
