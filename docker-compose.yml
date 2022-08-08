@@ -105,7 +105,7 @@ services:
     - echo
     - Ready to run...
   python-test-runner:
-    image: exercism/python-test-runner:cfac626c70c4bffc89745557d9058c81ba327d08
+    image: ghcr.io/facultaddeingenieria/exercism-python-test-runner:main
     entrypoint:
     - echo
     - Ready to run...
