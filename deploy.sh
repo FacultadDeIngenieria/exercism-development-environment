@@ -46,7 +46,7 @@ sudo ./aws/install
 
 sudo docker compose pull
 
-sudo docker tag exercism/python-test-runner:cfac626c70c4bffc89745557d9058c81ba327d08  exercism/exercism-prog2-track-test-runner
+sudo docker tag ghcr.io/facultaddeingenieria/exercism-python-test-runner:main  exercism/exercism-prog2-track-test-runner
 
 sudo aws --endpoint-url=http://0.0.0.0:3040 --no-sign-request s3 mb s3://exercism-v3-submissions
 sudo aws --endpoint-url=http://0.0.0.0:3040 --no-sign-request s3 mb s3://exercism-v3-tooling-jobs
