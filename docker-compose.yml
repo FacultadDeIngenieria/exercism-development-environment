@@ -76,6 +76,9 @@ services:
     - "/usr/src/app/node_modules"
     - type: tmpfs
       target: "/usr/src/app/tmp"
+    logging:
+      options:
+        max-lines: 5000
   mysql:
     image: mysql:8
     command: mysqld --default-authentication-plugin=mysql_native_password
